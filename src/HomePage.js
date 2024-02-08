@@ -17,7 +17,7 @@ function HomePage() {
                     {/* Resto del contenido del header adaptado a JSX */}
                 </header>
 
-                {/* Resto del contenido del body adaptado a JSX */}
+                {}
 
                 <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
                     {/* Contenido del footer adaptado a JSX */}
