@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
     return (
@@ -18,6 +19,7 @@ function HomePage() {
                 </header>
 
                 {/* Contenido del cuerpo de la página */}
+                <Link to="/list">ir a la pagina de productos</Link>
 
                 <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
                     {/* Contenido del pie de página */}

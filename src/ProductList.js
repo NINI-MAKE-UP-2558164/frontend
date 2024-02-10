@@ -18,6 +18,7 @@ function ProductList() {
 
     fetchData();
   }, []);
+  console.log(productos);
 
   return (
     <div>
