@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CardProduct from '../../componentes/CardProduct';
 
 function HomePage() {
     return (
@@ -20,7 +21,7 @@ function HomePage() {
 
                 {/* Contenido del cuerpo de la página */}
                 <Link to="/list">ir a la pagina de productos</Link>
-
+                <CardProduct/>
                 <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
                     {/* Contenido del pie de página */}
                 </footer>

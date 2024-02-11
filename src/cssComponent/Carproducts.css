@@ -1,0 +1,12 @@
+.views-cards{
+    height: 200px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px 2px rgb(0, 0,0 /10%);
+}
+img{
+    height: 100%;
+    width: auto;
+}
