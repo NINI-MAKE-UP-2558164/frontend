@@ -1,9 +1,10 @@
 import React from 'react';
-
+import '../csspages/'
 function CardProduct() {
     return (
-        <div>
-            Aqui va la card
+        <div className="views-cards">
+            <img className='imgcards' src={"../pictures"} alt="" />
+            <div className='container-text'></div>
         </div>
     )
 }
