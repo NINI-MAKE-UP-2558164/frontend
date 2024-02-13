@@ -12,7 +12,7 @@ function ProductList() {
         const data = await Servicio.getProductos();
         setProductos(data);
       } catch (error) {
-        console.error('Error al obtener productos:', error);
+        console.error('Error al obtener productos:', error);5
       }
     };
 
@@ -27,6 +27,8 @@ function ProductList() {
           <li key={producto.id}>{producto.nombre}</li>
         ))}
       </ul>
+      <button> registrar </button>
+     
     </div>
   );
 }

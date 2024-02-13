@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del header */
+header {
+  background-color: #d16666;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del header h1 */
+header h1 {
+  margin: 0;
+}
+
+/* Estilo de la navegación en el header */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de los componentes principales */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos de las tarjetas */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 250px;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container-text {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.container-text h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.container-text p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.container-text button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-text button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #dbdedc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
