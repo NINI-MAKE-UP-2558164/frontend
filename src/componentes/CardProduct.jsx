@@ -14,7 +14,7 @@ function CardProduct() {
             .catch(error => {
                 console.error('Error al obtener los datos de los productos:', error);
             });
-    }, []);
+    }, []); 
 
     return (
         <div className="card-container">

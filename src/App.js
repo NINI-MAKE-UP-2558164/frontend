@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductList from './ProductList'; // Importa tu componente
 import HomePage from './pages/home/HomePage';
+import CardProduct from './componentes/CardProduct';
 
 
 
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/list' element={<ProductList/>} />
-      </Routes>
+        <Route path='/procucts' element={<CardProduct/>} />
+        </Routes>
     </BrowserRouter>
   );
 }
