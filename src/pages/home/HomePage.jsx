@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../home/css.css'; // Importa el archivo CSS
+import CardProduct from '../../componentes/CardProduct';
 
 function HomePage() {
     return (
@@ -14,20 +16,18 @@ function HomePage() {
                 </nav>
             </header>
 
-                {/* Contenido del cuerpo de la página */}
-                <Link to="/list">ir a la pagina de productos</Link>
+            
 
-                <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
-                    {/* Contenido del pie de página */}
-                </footer>
+            {/* Aquí renderizamos las tarjetas */}
+            <div className="card-container">
+                <CardProduct />
+                {/* Si deseas mostrar más tarjetas, colócalas dentro de este div */}
+            </div>
 
-                {/* Scripts y otros recursos */}
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-                <script src="/script/js.js"></script>
-            </body>
-        </html>
+            <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
+                {/* Contenido del pie de página */}
+            </footer>
+        </div>
     );
 }
 
