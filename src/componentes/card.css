@@ -1,3 +1,4 @@
+/* Estilos para los productos */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -9,8 +10,9 @@
   margin: 20px;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadida sombra */
   transition: transform 0.3s ease;
+  background-color: #ffcccc; /* Fondo rosado */
 }
 
 .card:hover {
@@ -19,7 +21,8 @@
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Altura cuadrada */
+  object-fit: cover; /* Para asegurar que la imagen cubra todo el contenedor */
   border-radius: 10px;
 }
 

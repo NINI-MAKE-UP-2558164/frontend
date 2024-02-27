@@ -1,117 +1,162 @@
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* Estilos para el header */
 
-/* Estilo del header */
 header {
-  background-color: #d16666;
-  color: #fff;
+  background-color: #ffcccc; 
+  color: #333; 
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Estilo del header h1 */
-header h1 {
-  margin: 0;
+body{
+  background-color: #e6bebe;
+}
+/* Estilos para el logo */
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-/* Estilo de la navegación en el header */
-nav ul {
+.logo img {
+  width: 110px; 
+  height: 45%;
+  border-radius: 45%; 
+ 
+}
+
+/* Estilos para la navegación */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
   list-style-type: none;
   padding: 0;
-  text-align: center;
+  margin: 0;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+.nav-list li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos de los componentes principales */
-.App {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Estilos de las tarjetas */
-.card-container {
+/* Estilos para centrar contenido */
+.center-content {
+  flex: 1; 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.card {
-  width: 250px;
-  height: 300px; /* Ajusta la altura según tus necesidades */
-  margin: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+/* Estilos para el search-box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff; 
+  border-radius: 20px; 
+  padding: 5px 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.search-box input[type="text"] {
+  border: none; 
+  padding: 5px; 
+  margin-right: 5px; 
+  width: 200px; 
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.container-text {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.container-text h2 {
-  margin: 10px 0;
-  font-size: 18px;
-  color: #333;
-}
-
-.container-text p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.container-text button {
-  display: block;
-  width: 100%;
-  padding: 10px;
+.search-box button {
+  padding: 5px 10px;
+  background-color: #ff9999; 
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
+  color: #fff; 
+  border-radius: 20px; 
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.container-text button:hover {
-  background-color: #0056b3;
+/* Estilos para los enlaces de navegación */
+.option-nav-1,
+.option-nav-2 {
+  color: #333; 
+  height: -50px;
+  text-decoration: none;
+  text-align: end;
 }
 
-/* Estilos del footer */
-footer {
-  background-color: #dbdedc;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+
+
+/* Estilos para el carrito de compras */
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px
+}
+
+.cart-text {
+  font-weight: bold
+}
+
+.cart:hover .cart-text {
+  color: #ff6666; 
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3) {
+  background-color: #555;
 }

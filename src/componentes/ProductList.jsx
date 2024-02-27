@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export const ProductList = () => {
-  return (
-    <div>ProductList</div>
-    
-  )
+function ProductList() {
+    return (
+        <div>
+            {/* Contenido del componente ProductList */}
+        </div>
+    );
 }
+
+export default ProductList; // Exportar como un componente predeterminado
