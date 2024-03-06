@@ -19,7 +19,7 @@ body {
 }
 
 .logo img {
-  width: 110px;
+  width: 90px;
   height: auto; /* Ajusta la altura automáticamente */
   border-radius: 50%; /* Usa 50% para un círculo perfecto */
 }
@@ -53,34 +53,33 @@ nav {
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-radius: 20px;
-  padding: 5px 10px;
+  border-radius: 10px;
+  padding: 5px px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 150px;
 }
 
 .search-box input[type="text"] {
   border: none; /* Elimina el borde */
   padding: 5px;
   margin-right: 5px;
-  width: 100%; /* Usa el 100% del ancho disponible */
+  width: 100%; 
 }
 
 .search-box button {
   padding: 10px;
   background-color: #d49f9f;
   border: none;
-  height: 45px;
+  height: 50px;
   color: #fff;
-  border-radius: 50px;
   cursor: pointer;
 }
 
 /* Estilos para los enlaces de navegación */
 .option-nav-1,
 .option-nav-2 {
-  color: #333;
-  /* Ajusta la altura según tus necesidades */
-  height: 50px;
+  color: #625858;
+  height: 10px;
   text-decoration: none;
   text-align: end;
 }
@@ -104,3 +103,54 @@ nav {
 .cart:hover .cart-text {
   color: #ff6666;
 }
+
+/* categorias */
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.categoria {
+  border: 1px solid #ddd; /* Slightly lighter border color */
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f5f5f5; /* Light background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 200px; /* Adjust width as needed */
+  margin: 0.5rem;
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+
+
+.categoria h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.categoria p {
+  margin-bottom: 0;
+}
+
+
+
+/* footer */
+.footer {
+  background-color: #beadad;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+  min-width: 300px;
+ 
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
