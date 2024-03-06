@@ -1,17 +1,17 @@
 /* Estilos para el header */
-
 header {
-  background-color: #ffcccc; 
-  color: #333; 
-  padding: 20px;
+  background-color: #ffcccc;
+  color: #333;
+  padding: 20px; /* Añade un valor en píxeles para el padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-body{
+body {
   background-color: #e6bebe;
 }
+
 /* Estilos para el logo */
 .logo {
   display: flex;
@@ -19,10 +19,9 @@ body{
 }
 
 .logo img {
-  width: 110px; 
-  height: 45%;
-  border-radius: 45%; 
- 
+  width: 110px;
+  height: auto; /* Ajusta la altura automáticamente */
+  border-radius: 50%; /* Usa 50% para un círculo perfecto */
 }
 
 /* Estilos para la navegación */
@@ -32,10 +31,10 @@ nav {
 }
 
 .nav-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 5px 50px;
 }
+
 
 .nav-list li {
   display: inline-block;
@@ -44,7 +43,7 @@ nav {
 
 /* Estilos para centrar contenido */
 .center-content {
-  flex: 1; 
+  flex: 1;
   display: flex;
   justify-content: center;
 }
@@ -53,38 +52,38 @@ nav {
 .search-box {
   display: flex;
   align-items: center;
-  background-color: #fff; 
-  border-radius: 20px; 
-  padding: 5px 10px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-box input[type="text"] {
-  border: none; 
-  padding: 5px; 
-  margin-right: 5px; 
-  width: 200px; 
+  border: none; /* Elimina el borde */
+  padding: 5px;
+  margin-right: 5px;
+  width: 100%; /* Usa el 100% del ancho disponible */
 }
 
 .search-box button {
-  padding: 5px 10px;
-  background-color: #ff9999; 
+  padding: 10px;
+  background-color: #d49f9f;
   border: none;
-  color: #fff; 
-  border-radius: 20px; 
+  height: 45px;
+  color: #fff;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 /* Estilos para los enlaces de navegación */
 .option-nav-1,
 .option-nav-2 {
-  color: #333; 
-  height: -50px;
+  color: #333;
+  /* Ajusta la altura según tus necesidades */
+  height: 50px;
   text-decoration: none;
   text-align: end;
 }
-
-
 
 /* Estilos para el carrito de compras */
 .cart {
@@ -95,68 +94,13 @@ nav {
 .cart img {
   width: 30px;
   height: auto;
-  margin-right: 5px
+  margin-right: 5px;
 }
 
 .cart-text {
-  font-weight: bold
+  font-weight: bold;
 }
 
 .cart:hover .cart-text {
-  color: #ff6666; 
-}
-
-.slider-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.slides {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-label {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #ccc;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-#slide1:checked ~ .slides {
-  transform: translateX(0);
-}
-
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-#slide1:checked ~ .navigation label:nth-child(1),
-#slide2:checked ~ .navigation label:nth-child(2),
-#slide3:checked ~ .navigation label:nth-child(3) {
-  background-color: #555;
+  color: #ff6666;
 }

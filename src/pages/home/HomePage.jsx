@@ -11,14 +11,16 @@ function HomePage() {
         <div>
             <header>
                 <div className="logo">
-                    <img src={logoImage} alt="Logo de la empresa" />
+                    <img src={logoImage} alt="Logo de la empresa"/>
                 </div>
                 <nav>
                     <ul className="nav-list">
-                        <li><Link to="/categorias" className='option-nav-1'> categorias </Link></li>
                         <li><Link to="/ofertas" className='option-nav-1'> ofertas </Link></li>
                         <li><Link to="/historial" className='option-nav-1'> historial </Link></li>
+                        
                         <li><Link to="/pqrs" className='option-nav-1'> pqrs </Link></li>
+                        {/* Aquí está tu nuevo menú de productos */}
+                        <li><Link to="/productos" className='option-nav-1'> productos </Link></li>
                     </ul>
                     <div className="center-content">
                         <div className="search-box">
@@ -38,7 +40,6 @@ function HomePage() {
                     </ul>
                 </nav>
             </header>
-
 
             <ProductList />
 
