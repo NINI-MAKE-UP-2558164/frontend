@@ -39,7 +39,6 @@ function HomePage() {
                 </nav>
             </header>
 
-
             <ProductList />
 
             <div className="card-container">
@@ -47,6 +46,7 @@ function HomePage() {
             </div>
 
             <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
+                {/* Contenido del footer */}
             </footer>
         </div>
     );
