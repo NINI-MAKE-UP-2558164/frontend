@@ -32,13 +32,13 @@ function HomePage() {
                         <li>
                             <Link to="/carrito" className='option-nav-1 cart'>
                                 <img src={cartImage} alt="Carrito de compras" />
-                                <span className="cart-text">0</span> {/* Asegúrate de agregar un valor aquí */}
+                                <span className="cart-text">0</span> {}
                             </Link>
                         </li>
                     </ul>
                 </nav>
             </header>
-            
+
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -57,7 +57,7 @@ function HomePage() {
                 <CardProduct />
             </div>
             <footer className="text-center" style={{ backgroundColor: '#dbdedc', minWidth: '300px' }}>
-                {/* Contenido del footer */}
+                {}
             </footer>
         </div>
     );
