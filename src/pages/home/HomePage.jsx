@@ -18,7 +18,7 @@ function HomePage() {
                 <nav>
                     <ul className="nav-list">
                         <li className="nav-list-dropdown">
-                            <button className='option-nav-1'> Categorías </button>
+                            <ul className='option-nav-1'> Categorías </ul>
                             <ul className="sub-nav">
                                 <li><Link to="/categoria1">Categoría 1</Link></li>
                                 <li><Link to="/categoria2">Categoría 2</Link></li>
