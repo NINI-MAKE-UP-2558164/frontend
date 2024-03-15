@@ -2,14 +2,14 @@
 header {
   background-color: #ffcccc;
   color: #333;
-  padding: 20px; /* Añade un valor en píxeles para el padding */
+  padding: 20px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .d-block {
-  height: 155px; /* Añade px al valor */
+  height: 155px; 
 }
 
 body {
@@ -24,8 +24,8 @@ body {
 
 .logo img {
   width: 90px;
-  height: auto; /* Ajusta la altura automáticamente */
-  border-radius: 50%; /* Usa 50% para un círculo perfecto */
+  height: auto; 
+  border-radius: 50%; 
 }
 
 /* Estilos para la navegación */
@@ -63,7 +63,7 @@ nav {
 }
 
 .search-box input[type="text"] {
-  border: none; /* Elimina el borde */
+  border: none; 
   padding: 5px;
   margin-right: 5px;
   width: 100%;
@@ -104,7 +104,7 @@ nav {
 }
 
 .cart:hover .cart-text {
-  color: #dea4a4;
+  color: #ff6666;
 }
 
 /* Estilos para las categorías */
@@ -115,16 +115,16 @@ nav {
 }
 
 .categoria {
-  border: 1px solid #ddd; /* Borde ligeramente más claro */
+  border: 1px solid #ddd; 
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
-  background-color: #f5f5f5; /* Color de fondo claro */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
-  width: 200px; /* Ajustar ancho según sea necesario */
+  background-color: #f5f5f5; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  width: 200px; 
   margin: 0.5rem;
-  transition: all 0.2s ease-in-out; /* Efecto de transición suave al pasar el mouse */
-  cursor: pointer; /* Indicar elemento clickeable */
+  transition: all 0.2s ease-in-out; 
+  cursor: pointer; 
 }
 
 .categoria h2 {
@@ -163,14 +163,14 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #e9c3c3; /* Cambia el color de fondo según tu diseño */
+  background-color: #e9c3c3; 
   padding: 10px;
-  border: 1px solid #ccc; /* Ajusta el borde según tu diseño */
-  z-index: 999; /* Ajusta el valor de z-index para que esté por encima de las imágenes */
+  border: 1px solid #ccc; 
+  z-index: 999; 
 }
 
 .sub-nav li a {
-  color: #333; /* Cambia el color del texto según tu diseño */
+  color: #333; 
   text-decoration: none;
 }
 

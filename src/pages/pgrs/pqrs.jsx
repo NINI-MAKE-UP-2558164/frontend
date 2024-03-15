@@ -7,15 +7,14 @@ const Pqrs = () => {
         description: '',
         email: '',
         name: '',
-        receiveUpdates: false
     });
 
     // Función para manejar los cambios en los campos del formulario
     const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
+        const { name, value } = e.target;
         setPqrsData(prevState => ({
             ...prevState,
-            [name]: type === 'checkbox' ? checked : value
+            [name]: value
         }));
     };
 
@@ -52,8 +51,8 @@ const Pqrs = () => {
                         <select id="tipoPqrs" name="type" className="form-select" value={pqrsData.type} onChange={handleChange}>
                             <option value="">Seleccionar tipo</option>
                             <option value="peticion">Petición</option>
-                            <option value="queja">Queja</option>
                             <option value="reclamo">Reclamo</option>
+                            <option value="queja">Queja</option>
                             <option value="sugerencia">Sugerencia</option>
                         </select>
                     </div>
@@ -69,14 +68,7 @@ const Pqrs = () => {
                         <label htmlFor="descripcionPqrs" className="form-label">Descripción</label>
                         <textarea id="descripcionPqrs" name="description" className="form-control" rows="5" value={pqrsData.description} onChange={handleChange} placeholder="Ingrese la descripción de su PQRS"></textarea>
                     </div>
-                    <div className="mb-3">
-                        <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="recibirActualizaciones" name="receiveUpdates" checked={pqrsData.receiveUpdates} onChange={handleChange} />
-                            <label className="form-check-label" htmlFor="recibirActualizaciones">
-                                Recibir actualizaciones
-                            </label>
-                        </div>
-                    </div>
+
                     <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Enviar</button>
                 </fieldset>
             </form>

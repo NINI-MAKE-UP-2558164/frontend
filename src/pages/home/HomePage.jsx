@@ -99,7 +99,7 @@ function HomePage() {
                             <h5>Enlaces útiles</h5>
                             <ul className="list-unstyled">
                                 <li><Link to="/">Inicio</Link></li>
-                                <li><Link to="/productos">Productos</Link></li>
+                                <li><Link to="/categoria">Productos</Link></li>
                                 <li><Link to="/contacto">Contacto</Link></li>
                                 {/* Agrega más enlaces según sea necesario */}
                             </ul>
@@ -107,24 +107,24 @@ function HomePage() {
                         <div className="col-md-4">
                             <h5>Contacto</h5>
                             <ul className="list-unstyled">
-                                <li>Correo electrónico: info@example.com</li>
-                                <li>Teléfono: +123456789</li>
-                                <li>Dirección: Dirección de la empresa, Ciudad, País</li>
+                                <li>Correo electrónico: ninimakeup@gmail.com</li>
+                                <li>Teléfono: +5732256789</li>
+                                <li>Dirección: bogotá, colombia</li>
                             </ul>
                         </div>
                         <div className="col-md-4">
                             <h5>Síguenos</h5>
                             <ul className="list-unstyled">
-                                <li><a href="https://facebook.com">Facebook</a></li>
-                                <li><a href="https://twitter.com">Twitter</a></li>
-                                <li><a href="https://instagram.com">Instagram</a></li>
+                                <li><a href="https://facebook.com/nini-makeup">Facebook</a></li>
+                                <li><a href="https://twitter.com/nini-makeup">Twitter</a></li>
+                                <li><a href="https://instagram.com/nini-makeup">Instagram</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-12">
                             <div className="text-center">
-                                <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+                                <p>&copy; 2024 nini makeup. Todos los derechos reservados.</p>
                             </div>
                         </div>
                     </div>
