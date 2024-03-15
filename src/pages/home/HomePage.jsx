@@ -6,36 +6,29 @@ import ProductList from '../../componentes/ProductList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logoImage from './img/logo.png';
 import cartImage from './img/cart.png';
-// import aImage from './img/a.jpg'
-
+import aImage from './img/a.jpg';
 
 function HomePage() {
     return (
         <div>
-
             <header>
                 <div className="logo">
                     <img src={logoImage} alt="Logo de la empresa" />
                 </div>
                 <nav>
                     <ul className="nav-list">
-                        <li className="nav-item">
-                            <ul className="nav-list-dropdown">
-                                <li><a href="#" className='option-nav-1'> Categorías </a>
-                                    <ul className="sub-nav">
-                                        <li><a href="#">laviales</a></li>
-                                        <li><a href="#">Categoría 2</a></li>
-                                        <li><a href="#">Categoría 3</a></li>
-                                        {/* Agrega más categorías según sea necesario */}
-                                    </ul>
-                                </li>
+                        <li className="nav-list-dropdown">
+                            <button className='option-nav-1'> Categorías </button>
+                            <ul className="sub-nav">
+                                <li><Link to="/categoria1">Categoría 1</Link></li>
+                                <li><Link to="/categoria2">Categoría 2</Link></li>
+                                <li><Link to="/categoria3">Categoría 3</Link></li>
                             </ul>
                         </li>
-                        <li className="nav-item"><Link to="/ofertas" className='option-nav-1'> Ofertas </Link></li>
-                        <li className="nav-item"><Link to="/historial" className='option-nav-1'> Historial </Link></li>
-                        <li className="nav-item"><Link to="/pqrs" className='option-nav-1'> PQRS </Link></li>
+                        <li><Link to="/ofertas" className='option-nav-1'> Ofertas </Link></li>
+                        <li><Link to="/historial" className='option-nav-1'> Historial </Link></li>
+                        <li><Link to="/pqrs" className='option-nav-1'> PQRS </Link></li>
                     </ul>
-
                     <div className="center-content">
                         <div className="search-box">
                             <input type="text" placeholder="Buscar productos..." />
@@ -48,49 +41,49 @@ function HomePage() {
                         <li>
                             <Link to="/carrito" className='option-nav-1 cart'>
                                 <img src={cartImage} alt="Carrito de compras" />
-                                <span className="cart-text">0</span> { }
+                                <span className="cart-text">0</span>
                             </Link>
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <div id="carouselExampleDark" className="carousel carousel-dark slide">
+                <div className="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        {/* <img src={aImage} class="d-block w-100" alt="..."></img> */}
-                        <div class="carousel-caption d-none d-md-block">
+                <div className="carousel-inner">
+                    <div className="carousel-item active" data-bs-interval="10000">
+                        <img src={aImage} className="d-block w-100" alt="..."></img>
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        {/* <img src={aImage} class="d-block w-100" alt="..."></img> */}
-                        <div class="carousel-caption d-none d-md-block">
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={aImage} className="d-block w-100" alt="..."></img>
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        {/* <img src={aImage} class="d-block w-100" alt="..."></img> */}
-                        <div class="carousel-caption d-none d-md-block">
+                    <div className="carousel-item">
+                        <img src={aImage} className="d-block w-100" alt="..."></img>
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
                 </button>
             </div>
 
@@ -98,7 +91,6 @@ function HomePage() {
             <div className="card-container">
                 <CardProduct />
             </div>
-
 
             <footer className="footer">
                 <div className="container">
