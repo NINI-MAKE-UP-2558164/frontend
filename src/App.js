@@ -12,6 +12,7 @@ import Historial from './pages/historial/historial';
 import Ofertas from './pages/ofertas/ofertas';
 import Pqrs from './pages/pgrs/pqrs';
 import Carousel from './componentes/carousel';
+import Carrito from './pages/carrito/carrito';
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/Ofertas' element={<Ofertas />} />
         <Route path='/Pqrs' element={<Pqrs />} />
         <Route path='/Carousel' element={<Carousel />} />
+        <Route path='/Carrito' element={<Carrito />} />
 
 
 
