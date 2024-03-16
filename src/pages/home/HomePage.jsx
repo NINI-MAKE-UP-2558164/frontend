@@ -36,6 +36,10 @@ function HomePage() {
                         </div>
                     </div>
                     <ul className="nav-list">
+                        <li>
+                            <a href="http://127.0.0.1:8000/admin/" className='option-nav-1'>Administrador</a>
+                        </li>
+
                         <li><Link to="/register" className='option-nav-1'> Crea tu cuenta </Link></li>
                         <li><Link to="/login" className='option-nav-2'> Ingresa </Link></li>
                         <li>

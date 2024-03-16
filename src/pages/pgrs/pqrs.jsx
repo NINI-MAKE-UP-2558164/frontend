@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../Servicio'
 
 const Pqrs = () => {
     // Estado local para almacenar los valores del formulario
@@ -7,6 +8,7 @@ const Pqrs = () => {
         description: '',
         email: '',
         name: '',
+        date: '', // Nuevo campo para la fecha de envío
     });
 
     // Función para manejar los cambios en los campos del formulario
@@ -24,7 +26,7 @@ const Pqrs = () => {
         try {
             // Realizar la solicitud POST a la API REST
             const response = await fetch('http://localhost:8000/api/app1/pqrs', {
-                method: 'POST',
+                method: 'get',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -68,7 +70,10 @@ const Pqrs = () => {
                         <label htmlFor="descripcionPqrs" className="form-label">Descripción</label>
                         <textarea id="descripcionPqrs" name="description" className="form-control" rows="5" value={pqrsData.description} onChange={handleChange} placeholder="Ingrese la descripción de su PQRS"></textarea>
                     </div>
-
+                    <div className="mb-3">
+                        <label htmlFor="fechaEnvio" className="form-label">Fecha de envío</label>
+                        <input type="date" id="fechaEnvio" name="date" className="form-control" value={pqrsData.date} onChange={handleChange} />
+                    </div>
                     <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Enviar</button>
                 </fieldset>
             </form>
