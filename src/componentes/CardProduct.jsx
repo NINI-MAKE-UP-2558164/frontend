@@ -6,8 +6,9 @@ function CardProduct() {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/app1/')
+        axios.get('http://127.0.0.1:8000/api/app1/productos/')
             .then(response => {
+                console.log(response.data);
                 setProductos(response.data);
             })
             .catch(error => {

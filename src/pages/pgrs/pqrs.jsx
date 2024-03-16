@@ -7,7 +7,6 @@ const Pqrs = () => {
         description: '',
         email: '',
         name: '',
-        date: '', // Nuevo campo para la fecha de envío
     });
 
     // Función para manejar los cambios en los campos del formulario
@@ -24,7 +23,7 @@ const Pqrs = () => {
         e.preventDefault();
         try {
             // Realizar la solicitud POST a la API REST
-            const response = await fetch('http://localhost:8000/api/app1/pqrs', {
+            const response = await fetch('http://127.0.0.1:8000/api/app1/pqr/', {
                 method: 'get',
                 headers: {
                     'Content-Type': 'application/json'
