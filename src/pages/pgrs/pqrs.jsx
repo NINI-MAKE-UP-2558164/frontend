@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../../Servicio'
 
 const Pqrs = () => {
     // Estado local para almacenar los valores del formulario
@@ -74,7 +73,7 @@ const Pqrs = () => {
                         <label htmlFor="fechaEnvio" className="form-label">Fecha de envío</label>
                         <input type="date" id="fechaEnvio" name="date" className="form-control" value={pqrsData.date} onChange={handleChange} />
                     </div>
-                    <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Enviar</button>
+                    <button type="submit" className="btn btn-primary" >Enviar</button>
                 </fieldset>
             </form>
         </div>
