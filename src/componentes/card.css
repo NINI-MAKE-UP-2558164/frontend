@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #fff;
 }
 
 .card {
@@ -13,6 +14,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadida sombra */
   transition: transform 0.3s ease;
   background-color: #ffffffec; /* Fondo rosado */
+  box-shadow: 10px 5px 5px 5px #bdbdbd;
 }
 
 .card:hover {

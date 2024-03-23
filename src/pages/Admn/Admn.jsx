@@ -68,7 +68,7 @@ const Admn = () => {
 
   return (
     <div className='cont-princ'>
-      <div>
+      <div className='cont2'>
         <h1>Productos</h1>
 
         <div className='content-form'>
@@ -121,14 +121,20 @@ const Admn = () => {
                   <td>{producto.nombre}</td>
                   <td>{producto.cantidad}</td>
                   <td>{producto.precio}</td>
-                  <td><img src={`http://127.0.0.1:8000/${producto.imagen}`} alt={producto.nombre} /></td>
+                  <td><img src={producto.imagen} className="img-top" alt={producto.nombre} /></td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </div>
+      x
     </div>
+    
+
+    
+
+
   );
 };
 
