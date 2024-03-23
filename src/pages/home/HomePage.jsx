@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../home/css.css';
+import'./home.css';
 import CardProduct from '../../componentes/CardProduct';
 import ProductList from '../../componentes/ProductList';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +19,7 @@ function HomePage() {
                         <li className="nav-list-dropdown">
                             <ul className='option-nav-1'> Categorías </ul>
                             <ul className="sub-nav">
-                                <li><Link to="/categoria1">Categoría 1</Link></li>
+                                <li><Link to="/categoria1">lociónes</Link></li>
                                 <li><Link to="/categoria2">Categoría 2</Link></li>
                                 <li><Link to="/categoria3">Categoría 3</Link></li>
                             </ul>
@@ -59,7 +59,7 @@ function HomePage() {
             </div>
 
             <footer className="footer">
-                <div className="container">
+                <div className="contain">
                     <div className="row">
                         <div className="col-md-4">
                             <h5>Enlaces útiles</h5>
@@ -71,7 +71,7 @@ function HomePage() {
                             <h5>Contacto</h5>
                             <ul className="list-unstyled">
                                 <li>Correo electrónico: ninimakeup@gmail.com</li>
-                                <li>Teléfono: +5732256789</li>
+                                <li>Teléfono: +3184294756</li>
                                 <li>Dirección: bogotá, colombia</li>
                             </ul>
                         </div>

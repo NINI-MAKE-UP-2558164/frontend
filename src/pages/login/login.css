@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #beadad;
+}
+
+/* .container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.cont-app{
+  margin-top: 25px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b29898;
+
+  
+
+}
