@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductList from './ProductList';
-import Register from './pages/register/register';
 import HomePage from './pages/home/HomePage';
 import CardProduct from './componentes/CardProduct';
 import Login from './pages/login/login';
@@ -13,6 +12,9 @@ import Ofertas from './pages/ofertas/ofertas';
 import Pqrs from './pages/pgrs/pqrs';
 import Carousel from './componentes/carousel';
 import Carrito from './pages/carrito/carrito';
+import { Registro } from './pages/Registro/Registro';
+
+
 
 
 
@@ -26,13 +28,14 @@ function App() {
         <Route path='/list' element={<ProductList />} />
         <Route path='/products' element={<CardProduct />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+        <Route path='/registro' element={<Registro/>}/>
         <Route path='/Categorias' element={<Categorias />} />
         <Route path='/Historial' element={<Historial />} />
         <Route path='/Ofertas' element={<Ofertas />} />
         <Route path='/Pqrs' element={<Pqrs />} />
         <Route path='/Carousel' element={<Carousel />} />
         <Route path='/Carrito' element={<Carrito />} />
+
 
 
 
