@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import'./home.css';
+import './home.css';
 import CardProduct from '../../componentes/CardProduct';
 import ProductList from '../../componentes/ProductList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logoImage from './img/logo.png';
 import cartImage from './img/cart.png';
+import Carousel from '../../componentes/carousel';
+
 
 function HomePage() {
     return (
@@ -19,9 +21,9 @@ function HomePage() {
                         <li className="nav-list-dropdown">
                             <ul className='option-nav-1'> Categorías </ul>
                             <ul className="sub-nav">
-                                <li><Link to="/categoria1">lociónes</Link></li>
-                                <li><Link to="/categoria2">Categoría 2</Link></li>
-                                <li><Link to="/categoria3">Categoría 3</Link></li>
+                                <li><Link to="/categoria1">Belleza y cuidado</Link></li>
+                                <li><Link to="/categoria2">Maquillaje</Link></li>
+                                <li><Link to="/categoria3">Cuidado del cabello</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/ofertas" className='option-nav-1'> Ofertas </Link></li>
@@ -35,10 +37,6 @@ function HomePage() {
                         </div>
                     </div>
                     <ul className="nav-list">
-                        <li>
-                            {/* <a href="http://127.0.0.1:8000/admin/" className='option-nav-1'>Administrador</a> */}
-                            <Link to = '/admin' className='option-nav-1'>admin</Link>
-                        </li>
 
                         <li><Link to="/register" className='option-nav-1'> Crea tu cuenta </Link></li>
                         <li><Link to="/login" className='option-nav-2'> Ingresa </Link></li>
@@ -51,8 +49,8 @@ function HomePage() {
                     </ul>
                 </nav>
             </header>
+            <Carousel />
 
-           
 
             <ProductList />
             <div className="card-container">
@@ -60,40 +58,41 @@ function HomePage() {
             </div>
 
             <footer className="footer">
-                <div className="contain">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-4">
                             <h5>Enlaces útiles</h5>
                             <ul className="list-unstyled">
-                                
+                                <li><Link to='/admin' className='option-nav-1'>Administrador</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-4">
                             <h5>Contacto</h5>
                             <ul className="list-unstyled">
-                                <li>Correo electrónico: ninimakeup@gmail.com</li>
-                                <li>Teléfono: +3184294756</li>
-                                <li>Dirección: bogotá, colombia</li>
+                                <li>Correo electrónico: <a href="mailto:ninimakeup@gmail.com">ninimakeup@gmail.com</a></li>
+                                <li>Teléfono: <a href="tel:+3184294756">+3184294756</a></li>
+                                <li>Dirección: Bogotá, Colombia</li>
                             </ul>
                         </div>
                         <div className="col-md-4">
                             <h5>Síguenos</h5>
                             <ul className="list-unstyled">
-                                <li><a href="https://facebook.com/nini-makeup">Facebook</a></li>
-                                <li><a href="https://twitter.com/nini-makeup">Twitter</a></li>
-                                <li><a href="https://instagram.com/nini-makeup">Instagram</a></li>
+                                <li><a href="https://facebook.com/nini-makeup" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                                <li><a href="https://twitter.com/nini-makeup" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                                <li><a href="https://instagram.com/nini-makeup" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="text-center">
-                                <p>&copy; 2024 nini makeup. Todos los derechos reservados.</p>
-                            </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="text-center">
+                            <p>&copy; {new Date().getFullYear()} Nini Makeup. Todos los derechos reservados.</p>
                         </div>
                     </div>
                 </div>
             </footer>
+
         </div>
     );
 }

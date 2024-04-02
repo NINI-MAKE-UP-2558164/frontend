@@ -5,7 +5,7 @@ function ListaProductos() {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/productos_registro/')
+    axios.get('http://127.0.0.1:8000/api/app1/productos/')
       .then(response => {
         setProductos(response.data);
       })
