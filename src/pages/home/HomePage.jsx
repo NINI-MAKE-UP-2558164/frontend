@@ -38,7 +38,7 @@ function HomePage() {
                     </div>
                     <ul className="nav-list">
 
-                        <li><Link to="/register" className='option-nav-1'> Crea tu cuenta </Link></li>
+                        <li><Link to="/Registro" className='option-nav-1'> Crea tu cuenta </Link></li>
                         <li><Link to="/login" className='option-nav-2'> Ingresa </Link></li>
                         <li>
                             <Link to="/carrito" className='option-nav-1 cart'>

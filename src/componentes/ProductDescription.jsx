@@ -1,42 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-const ProductDescription = ({ match }) => {
-  const [producto, setProducto] = useState(null);
+export function ProductDescription(props) {
+  const [producto, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProducto = async () => {
-      try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/app1/productos`);
-        setProducto(response.data);
+    const productId = props.match.params.id; // Obtener el ID del producto de la URL
+    axios
+      .get(`http://127.0.0.1:8000/api/app1/productos/${productId}`)
+      .then((response) => {
+        console.log(response.data);
+        setProduct(response.data);
         setLoading(false);
-      } catch (error) {
-        console.error('Error al obtener la descripción del producto:', error);
+      })
+      .catch((error) => {
+        console.error("Error al obtener los datos del producto:", error);
         setLoading(false);
-      }
-    };
-
-    fetchProducto();
-  }, [match.params.id]);
+      });
+  }, [props.match.params.id]); // Solo props.match.params.id debe ser la dependencia
 
   if (loading) {
     return <div>Cargando...</div>;
   }
 
-  if (!producto) {
-    return <div>No se encontró el producto.</div>;
-  }
-
   return (
+    
     <div>
-      <h2>{producto.nombre}</h2>
-      <p><strong>Precio:</strong> ${producto.precio}</p>
-      <p><strong>Disponibilidad:</strong> {producto.cantidad} unidades</p>
-      <p><strong>Descripción:</strong> {producto.descripcion}</p>
-      
+      {producto ? (
+        <div>
+          <h2>{producto.nombre}</h2>
+          <img src={producto.imagen} alt={producto.nombre} />
+          <p>Precio: ${producto.precio}</p>
+          <p>Disponibilidad: {producto.cantidad} unidades</p>
+          {/* Otros detalles del producto */}
+        </div>
+      ) : (
+        <div>Producto no encontrado</div>
+      )}
     </div>
   );
-};
-
-export default ProductDescription;
+}

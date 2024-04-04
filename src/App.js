@@ -9,11 +9,11 @@ import Historial from './pages/historial/historial';
 import Ofertas from './pages/ofertas/ofertas';
 import Pqrs from './pages/pgrs/pqrs';
 import Carrito from './pages/carrito/carrito';
-import ProductDescription from './componentes/ProductDescription';
 import Productos from './pages/Admin/productos';
 import Admin from './pages/Admin/Admin';
 import Carousel from './componentes/carousel';
 import { Registro } from './pages/Registro/Registro';
+import {ProductDescription} from './componentes/ProductDescription';
 
 
 
@@ -37,7 +37,7 @@ function App() {
         <Route path='/Ofertas' element={<Ofertas />} />
         <Route path='/Pqrs' element={<Pqrs />} />
         <Route path='/Carrito' element={<Carrito />} />
-        <Route path="/ProductDescription/:Id" component={ProductDescription} />
+        <Route path='/ProductDescription/:productos.id' element={<ProductDescription />} />
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Admin' element={<Admin />} />
 
